@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Kate Here</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/kate-fav.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo-section">
+                <img class="img-logo" src="./assets/images/kate-logo.png" alt="KATE">
+            </div>
+            <div class="bio-section">
+                <h3>Join me on my travel journey. Follow me on social media for the latest updates!</h3>
+            </div>
+            <div class="menu-section">
+                <img class="img-menu" src="./assets/images/burger-bar.png" alt="Menu">
+            </div>
+        </nav>
+        <!-- POPUP -->
+        <div id="notification">
+            <img src="./assets/images/pop-notif.png" class="pop-up" alt="">
+        </div>
+        <!-- POPUP -->
+        <div class="useless">
+            <header class="header-section">
+                <h1 class="tittle-1">LIVING</h1>
+                <h1 class="tittle-2"><span>LIFE</span> IN</h1>
+                <h1 class="tittle-3">TRAVEL</h1>
+                <h1 class="tittle-4">MODE</h1>
+            </header>
+        </div>
+        <main class="main-section">
+            <p class="main-1">Traveling is a journey that transcends mere movement from one place to another; it’s an immersive experience that enriches the soul. Each destination tells a story, inviting travelers to explore its landscapes, cultures, and histories. From the bustling streets of a vibrant city to the serene beauty of untouched nature, every corner of the world holds a unique charm waiting to be discovered.</p> <br>
+            <p class="main-1">Every destination offers its own unique tapestry of experiences. I relish wandering through vibrant markets, savoring local delicacies, and engaging with people whose lives and stories are so different from my own. Nature’s beauty captivates me, whether I’m hiking through majestic mountains, lounging on pristine beaches, or exploring lush forests.</p>
+            <h2 class="main-tittle">Wanderlust Chronicles</h2>
+            <p class="main-2">In the end, traveling isn’t just about the sights you see; it’s about the memories you create, the friendships you forge, and the transformation that occurs within you. It’s an open invitation to step outside your comfort zone and embrace the unknown, making every journey a chapter in your personal story.</p>
+        </main>
+        <footer class="footer-section">
+            <h5>Follow Me On</h5>
+            <div class="social-media">
+                <a href="https://www.instagram.com/not_benjamin">Instagram</a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/not_benjamin">Telegram</a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/not_benjamin">Tiktok</a>
+            </div>
+            <p class="copyright">
+                ©Kate 2024. All rights reserved.
+            </p>
+        </footer>
+    </div>
+    
+
+
+</body>
+    <script>
+        setTimeout(function() {
+            document.getElementById('notification').style.display = 'block';
+
+            // Hide the image after another 5 seconds
+            setTimeout(function() {
+                document.getElementById('notification').style.display = 'none';
+            }, 4000); // 5000 milliseconds = 5 seconds
+        }, 4000); // First delay of 5 seconds
+
+        setTimeout(function() {
+            alert("We sincerely apologize for the inconvenience, but this page is currently under renovation. Thank you for your understanding! IDK WHAT TO DO AFTER FOOD IF YOU DISLIKE IT IGNORE IT OKAY SAYANG ❤️");
+        }, 7000);
+        setTimeout(function() {
+            alert("I LOVE YOU AYANG ❤️");
+        }, 9000);
+        setTimeout(function() {
+            var userResponse = prompt("Please insert your name");
+            if (userResponse) {
+                alert("Youre the only person i love , " + userResponse + " Thank you sayang❤️ Have A Good Day Ahead!");
+            } else {
+                alert("Thank you sayang❤️ Have A Good Day Ahead");
+            }
+        }, 11000); // 11000 milliseconds equals 11 seconds
+    </script>
+</html>

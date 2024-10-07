@@ -1,0 +1,171 @@
+@font-face {
+    font-family: Oswald;
+    src: url("./assets/Fonts/Oswald-Medium.ttf");
+}
+@font-face {
+    font-family: ProtestStrike;
+    src: url('./assets/Fonts/ProtestStrike-Regular.ttf');
+}
+.container {
+    margin: 30px 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.logo-section .img-logo {
+    width: 100px;
+}
+.bio-section h3 {
+    font-family: Oswald;
+    border-bottom: 1px solid black;
+}
+.menu-section .img-menu {
+    width: 45px;
+}
+.useless {
+    display: flex;
+    justify-content: center;
+}
+.header-section {
+    margin-top: 100px;
+    font-size: 110px;
+    font-family: ProtestStrike;
+    line-height: 80px;
+    /* display: none; */
+}
+.header-section .tittle-1 {
+    margin-left: 40px;
+}
+.header-section .tittle-2 {
+    margin-left: 70px;
+}
+.header-section span {
+    -webkit-text-fill-color: #fff7f700;
+    -webkit-text-stroke-width: 2px;
+    color: #0f0909;
+    text-align: right;
+}
+.header-section .tittle-3 {
+    letter-spacing: 18px;
+}
+.header-section .tittle-4 {
+    margin-left: 120px;
+}
+#notification {
+    display: none;
+    margin-top: 50px;
+}
+#notification .pop-up {
+    display: block;           /* Make the image a block element */
+    margin-left: auto;       /* Set left margin to auto */
+    margin-right: auto;      /* Set right margin to auto */
+    width: 50%; 
+}
+.main-section {
+    font-family: Oswald;
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+}
+.main-section .main-1 {
+    text-align: left;
+}
+.main-section .main-tittle {
+    margin-top: 40px;
+    font-size: 40px;
+    -webkit-text-fill-color: #fff7f700;
+    -webkit-text-stroke-width: 1px;
+    color: #0f0909;
+    text-align: right;
+}
+.main-section .main-2 {
+    text-align: right;
+}
+.footer-section {
+    padding-top: 60px;
+    width: 80%;
+    margin: auto;
+}
+.footer-section h5{
+    margin-bottom: 20px;
+    font-family: ProtestStrike;
+    font-size: 40px;
+}
+.social-media {
+    font-family: Oswald;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+.social-media:hover {
+    background-color: rgb(194, 146, 146);
+}
+.social-media a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+
+@media (max-width:768px) {
+    .bio-section h3 {
+        display: none;
+    }
+    .header-section {
+        font-size: 90px;
+        line-height: 67px;
+    }
+}
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
