@@ -77,6 +77,22 @@
 .main-section .main-1 {
     text-align: left;
 }
+.main-1 span {
+    -webkit-text-fill-color: #fff7f700;
+    -webkit-text-stroke-width: 1px;
+    color: #0f0909;
+    text-align: right;
+    font-size: 30px;
+}
+.main-section .main-h1 {
+    font-size: 50px;
+    -webkit-text-fill-color: #fff7f700;
+    -webkit-text-stroke-width: 1px;
+    color: #0f0909;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
 .main-section .main-tittle {
     margin-top: 40px;
     font-size: 40px;
@@ -87,6 +103,20 @@
 }
 .main-section .main-2 {
     text-align: right;
+}
+.annual-desc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.annual-sec1 {
+    width: 80%;
+}
+.annual-sec2 {
+    text-align: right;
+}
+.annual-sec2 .year {
+    font-size: 30px;
 }
 .footer-section {
     padding-top: 60px;
