@@ -119,7 +119,13 @@
 .annual-sec2 .year {
     font-size: 30px;
 }
+.image-container {
+    width: 100%;
+}
 .image-container img {
+    width: 100%;
+}
+.image-containerdown {
     width: 100%;
 }
 .image-containerdown img {
