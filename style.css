@@ -160,6 +160,9 @@
 
 
 @media (max-width:768px) {
+    .logo-section .img-logo {
+        margin-top: 12px;
+    }
     .bio-section h3 {
         display: none;
     }
