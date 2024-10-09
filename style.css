@@ -73,6 +73,7 @@
     padding-top: 100px;
     width: 80%;
     margin: auto;
+    /* position: relative; */
 }
 .main-section .main-1 {
     text-align: left;
@@ -117,6 +118,13 @@
 }
 .annual-sec2 .year {
     font-size: 30px;
+}
+.image-container img {
+    width: 100%;
+}
+.image-containerdown img {
+    width: 100%;
+    margin-top: -110px;
 }
 .footer-section {
     padding-top: 60px;
