@@ -6,6 +6,10 @@
     font-family: ProtestStrike;
     src: url('./assets/Fonts/ProtestStrike-Regular.ttf');
 }
+@font-face {
+    font-family: Script;
+    src: url('./assets/Fonts/StyleScript-Regular.ttf');
+}
 .container {
     margin: 30px 20px;
 }
@@ -119,6 +123,9 @@
 .annual-sec2 .year {
     font-size: 30px;
 }
+.container {
+    margin-bottom: 40px;
+}
 .image-container {
     width: 100%;
 }
@@ -158,6 +165,28 @@
     
 }
 
+/* signature */
+.signature-container {
+    text-align: right;
+    border-right: 2px solid black; /* Cursor effect */
+    padding-right: 5px;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow */
+}
+#signature {
+    font-family: Script;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.typing {
+    animation: blink 0.7s infinite; /* Cursor blinking effect */
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+/* signature */
+
 
 @media (max-width:768px) {
     .logo-section .img-logo {
@@ -169,6 +198,12 @@
     .header-section {
         font-size: 90px;
         line-height: 67px;
+    }
+    .container {
+        margin-bottom: 30px;
+    }
+    #signature {
+        font-size: 20px;
     }
 }
 

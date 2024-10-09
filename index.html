@@ -58,6 +58,9 @@
                         <img src="./assets/images/gallerydown1.png" alt="Bottom Image">
                     </div>
                 </div>
+                <div class="signature-container">
+                    <span id="signature"></span>
+                </div>
 
                 <h2 class="main-tittle">Wanderlust Chronicles</h2>
                 <p class="main-2">In the end, traveling isn’t just about the sights you see; it’s about the memories you create, the friendships you forge, and the transformation that occurs within you. It’s an open invitation to step outside your comfort zone and embrace the unknown, making every journey a chapter in your personal story.</p>
@@ -92,5 +95,24 @@
             const bottomImage = document.querySelector('.bottom');
             bottomImage.style.transform = `translateY(${Math.min(scrollPosition, 30)}px)`;
         });
+
+        // signature typing
+        const signatureText = "Katsiaryna Putsilouskaya-"; // Change this to your desired text
+const signatureElement = document.getElementById("signature");
+let index = 0;
+
+function type() {
+    if (index < signatureText.length) {
+        signatureElement.textContent += signatureText.charAt(index);
+        index++;
+        setTimeout(type, 1000); // Adjust typing speed here (in milliseconds)
+    } else {
+        // Optionally, add a blinking cursor after typing is complete
+        signatureElement.classList.add("typing");
+    }
+}
+
+type();
+
     </script>
 </html>
