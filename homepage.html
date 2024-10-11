@@ -10,7 +10,18 @@
 <body>
     <div class="container" id="pinContainer">
         <section class="panel blue">
-            <div id="navbar"></div>
+            <!-- <div id="navbar"></div> -->
+            <nav class="navbar">
+                <div class="logo-section">
+                    <img class="img-logo" src="./assets/images/kate-logo.png" alt="KATE">
+                </div>
+                <div class="bio-section">
+                    <h3>Join me on my travel journey. Follow me on social media for the latest updates!</h3>
+                </div>
+                <div class="menu-section">
+                    <img class="img-menu" src="./assets/images/burger-bar.png" alt="Menu">
+                </div>
+            </nav>
             <!-- POPUP -->
             <!-- <div id="notification">
                 <img src="./assets/images/pop-notif.png" class="pop-up" alt="">
@@ -31,11 +42,10 @@
                 <p class="main-1">Welcome to my travel journey! <span>I’m Kate</span>, a passionate traveler on a mission to explore the world, one adventure at a time. From the vibrant streets of bustling cities to the tranquil beauty of nature, I believe every destination has a unique story to tell. On this page, I’ll share my experiences, tips, and favorite moments from my travels. Join me as I discover new cultures, savor delicious cuisines, and connect with incredible people along the way. Let’s embark on this journey together!</p> <br>
                 <div class="blog-section">
                     <h1 class="main-h1">ANNUAL GALLERY</h1>
-                    
                 </div>
                 <div class="annual-desc">
                     <div class="annual-sec1">
-                    <p class="annual-description">Every adventure I embark on is captured in stunning photographs, allowing me to share the beauty and wonder of each destination. From breathtaking landscapes to vibrant street scenes, my photos tell the stories of my travels and the incredible experiences I've had. Join me as I showcase my adventures and inspire others to explore the world, one picture at a time!</p>
+                        <p class="annual-description">Every adventure I embark on is captured in stunning photographs, allowing me to share the beauty and wonder of each destination. From breathtaking landscapes to vibrant street scenes, my photos tell the stories of my travels and the incredible experiences I've had. Join me as I showcase my adventures and inspire others to explore the world, one picture at a time!</p>
                     </div>
                     <div class="annual-sec2">
                         <img class="blog-gif" src="./assets/images/blog.gif" alt="Kate Blog Page">
@@ -60,19 +70,49 @@
         </section>
         <div id="footer"></div>
     </div>
+
+    <div class="dropdown-menu">
+        <div class="nav-menu">
+            <img class="logo-menu" src="./assets/images/kate-logo.png" alt="KATE PAGE">
+            <img class="close-menu" src="./assets/images/eye.png" alt="close menu">
+        </div>
+        <div class="menu-content center">
+            <ul class="list-items">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/">ABOUT</a></li>
+                <li><a href="/">BLOG</a></li>
+                <li><a href="/">CONTACT</a></li>
+            </ul>
+        </div>
+        <p class="copyright-menu">©Kate 2024. All rights reserved.</p>
+    </div>
     
 
 
 </body>
     <script>
-        // BELOW FETCHING MENU......
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading menu:', error));
-        // ABOVE FETCHING MENU............
+        document.querySelector('.img-menu').addEventListener("click", function(){
+            var showMenu = document.querySelector(".dropdown-menu");
+            var closeMenu = document.querySelector(".container");
+
+            if(showMenu.style.display === "none"){
+                showMenu.style.display = "block";
+                closeMenu.style.display = "none";
+            } else {
+                showMenu.style.display = "none";
+            }
+        })
+        document.querySelector('.close-menu').addEventListener("click", function(){
+            var showMenu = document.querySelector(".dropdown-menu");
+            var closeMenu = document.querySelector(".container");
+
+            if(showMenu.style.display === "block"){
+                showMenu.style.display = "none";
+                closeMenu.style.display = "block";
+            } else {
+                showMenu.style.display = "block";
+            }
+        })
         // BELOW FETCHING FOOTER......
         fetch('footer.html')
             .then(response => response.text())
@@ -108,9 +148,5 @@
         }
         type();
         // ABOVE SIGNATURE TYPING........
-
-
-        
-
     </script>
 </html>
