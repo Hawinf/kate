@@ -158,14 +158,14 @@
         font-size: 90px;
         line-height: 67px;
     }
+    .main-section {
+        width: 95%;
+    }
     .container {
         margin-bottom: 30px;
     }
     #signature {
         font-size: 20px;
-    }
-    .main-section .main-h1 {
-        font-size: 40px;
     }
 }
 
