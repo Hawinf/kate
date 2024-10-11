@@ -1,0 +1,51 @@
+.container-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.loader {
+    display: inline-flex;
+    gap: 10px;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    height: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+      radial-gradient(farthest-side,#000 95%,#0000) 50%/15px 15px no-repeat
+      #c48080;
+    aspect-ratio: 1;
+    animation: l10 1.5s infinite alternate;
+  }
+  .loader:after {
+    --s:-1;
+  }
+  @keyframes l10 {
+    0% ,20% {transform:scaleX(var(--s,1)) rotate(0deg) ;clip-path:inset(0)}
+    60%,100%{transform:scaleX(var(--s,1)) rotate(30deg);clip-path:inset(40% 0 0)}
+  }
+
+
+  /* fill text animation */
+  /* HTML: <div class="loader"></div> */
+.loading-text {
+    margin-top: 10px;
+    width: fit-content;
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0000;
+    -webkit-text-stroke: 1px #000;
+    background: conic-gradient(#000 0 0) 0/1ch 100% no-repeat text;
+    animation: l14 1.5s steps(7) infinite alternate;
+  }
+  .loading-text:before {
+    content: "Kate";
+  }
+  @keyframes l14 {
+    to {background-position: calc(100% + 1ch)}
+  }

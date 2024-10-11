@@ -98,21 +98,21 @@
 
         // signature typing
         const signatureText = "Katsiaryna Putsilouskaya-"; // Change this to your desired text
-const signatureElement = document.getElementById("signature");
-let index = 0;
+        const signatureElement = document.getElementById("signature");
+        let index = 0;
 
-function type() {
-    if (index < signatureText.length) {
-        signatureElement.textContent += signatureText.charAt(index);
-        index++;
-        setTimeout(type, 1000); // Adjust typing speed here (in milliseconds)
-    } else {
-        // Optionally, add a blinking cursor after typing is complete
-        signatureElement.classList.add("typing");
-    }
-}
+        function type() {
+            if (index < signatureText.length) {
+                signatureElement.textContent += signatureText.charAt(index);
+                index++;
+                setTimeout(type, 1000); // Adjust typing speed here (in milliseconds)
+            } else {
+                // Optionally, add a blinking cursor after typing is complete
+                signatureElement.classList.add("typing");
+            }
+        }
 
-type();
+        type();
 
     </script>
 </html>
