@@ -164,6 +164,9 @@
     #signature {
         font-size: 20px;
     }
+    .main-section .main-h1 {
+        font-size: 40px;
+    }
 }
 
 @media (max-width:576px) {
@@ -183,9 +186,6 @@
     .main-section {
         padding-top: 140px;
         width: 95%;
-    }
-    .main-section .main-h1 {
-        font-size: 40px;
     }
 }
 
