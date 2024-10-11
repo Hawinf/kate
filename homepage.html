@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Kate Here</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/kate-fav.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container" id="pinContainer">
+        <section class="panel blue">
+            <nav class="navbar">
+                <div class="logo-section">
+                    <img class="img-logo" src="./assets/images/kate-logo.png" alt="KATE">
+                </div>
+                <div class="bio-section">
+                    <h3>Join me on my travel journey. Follow me on social media for the latest updates!</h3>
+                </div>
+                <div class="menu-section">
+                    <img class="img-menu" src="./assets/images/burger-bar.png" alt="Menu">
+                </div>
+            </nav>
+            <!-- POPUP -->
+            <!-- <div id="notification">
+                <img src="./assets/images/pop-notif.png" class="pop-up" alt="">
+            </div> -->
+            <!-- POPUP -->
+            <div class="useless">
+                <header class="header-section">
+                    <h1 class="tittle-1">LIVI<span>N</span>G</h1>
+                    <h1 class="tittle-2"><span>LIFE</span> IN</h1>
+                    <!-- <h1 class="tittle-3">TRAVEL</h1> -->
+                    <img class="tittle-img" src="./assets/images/header-kate.png" alt="Kate Here">
+                    <h1 class="tittle-4">MO<span>D</span>E</h1>
+                </header>
+            </div>
+        </section>
+        <section class="panel turqoise">
+            <main class="main-section">
+                <p class="main-1">Welcome to my travel journey! <span>I’m Kate</span>, a passionate traveler on a mission to explore the world, one adventure at a time. From the vibrant streets of bustling cities to the tranquil beauty of nature, I believe every destination has a unique story to tell. On this page, I’ll share my experiences, tips, and favorite moments from my travels. Join me as I discover new cultures, savor delicious cuisines, and connect with incredible people along the way. Let’s embark on this journey together!</p> <br>
+                <h1 class="main-h1">ANNUAL GALLERY</h1>
+                <div class="annual-desc">
+                    <div class="annual-sec1">
+                    <p class="annual-description">Every adventure I embark on is captured in stunning photographs, allowing me to share the beauty and wonder of each destination. From breathtaking landscapes to vibrant street scenes, my photos tell the stories of my travels and the incredible experiences I've had. Join me as I showcase my adventures and inspire others to explore the world, one picture at a time!</p>
+                    </div>
+                    <div class="annual-sec2">
+                        <h5 class="year">THIS YEAR</h5>
+                        <p>2023 - 2024</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="image-container top">
+                        <img src="./assets/images/gallerytop1.png" alt="Top Image">
+                    </div>
+                    <div class="journey-text">Journey</div>
+                    <div class="image-containerdown bottom">
+                        <img src="./assets/images/gallerydown1.png" alt="Bottom Image">
+                    </div>
+                </div>
+                <div class="signature-container">
+                    <span id="signature"></span>
+                </div>
+
+                <h2 class="main-tittle">Wanderlust Chronicles</h2>
+                <p class="main-2">In the end, traveling isn’t just about the sights you see; it’s about the memories you create, the friendships you forge, and the transformation that occurs within you. It’s an open invitation to step outside your comfort zone and embrace the unknown, making every journey a chapter in your personal story.</p>
+            </main>
+        </section>
+        <footer class="footer-section">
+            <h5>Follow Me On</h5>
+            <div class="social-media">
+                <a href="https://www.instagram.com/not_benjamin">Instagram</a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/not_benjamin">Telegram</a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/not_benjamin">Tiktok</a>
+            </div>
+            <p class="copyright">
+                ©Kate 2024. All rights reserved.
+            </p>
+        </footer>
+    </div>
+    
+
+
+</body>
+    <script>
+        window.addEventListener('scroll', () => {
+            // Get the scroll position
+            const scrollPosition = window.scrollY;
+
+            // Move the bottom image down only 30 pixels
+            const bottomImage = document.querySelector('.bottom');
+            bottomImage.style.transform = `translateY(${Math.min(scrollPosition, 30)}px)`;
+        });
+
+        // signature typing
+        const signatureText = "Katsiaryna Putsilouskaya-"; // Change this to your desired text
+        const signatureElement = document.getElementById("signature");
+        let index = 0;
+
+        function type() {
+            if (index < signatureText.length) {
+                signatureElement.textContent += signatureText.charAt(index);
+                index++;
+                setTimeout(type, 1000); // Adjust typing speed here (in milliseconds)
+            } else {
+                // Optionally, add a blinking cursor after typing is complete
+                signatureElement.classList.add("typing");
+            }
+        }
+
+        type();
+
+    </script>
+</html>
