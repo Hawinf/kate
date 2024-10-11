@@ -11,7 +11,7 @@
     src: url('./assets/Fonts/StyleScript-Regular.ttf');
 }
 .container {
-    margin: 30px 20px;
+    margin: 20px;
 }
 .useless {
     display: flex;
@@ -70,14 +70,23 @@
     text-align: right;
     font-size: 30px;
 }
+.blog-section {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    display: flex;
+}
 .main-section .main-h1 {
     font-size: 50px;
     -webkit-text-fill-color: #fff7f700;
     -webkit-text-stroke-width: 1px;
     color: #0f0909;
-    border-bottom: 1px solid black;
-    padding-bottom: 5px;
     margin-top: 30px;
+}
+.blog-gif {
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 .main-section .main-tittle {
     margin-top: 40px;
@@ -175,7 +184,12 @@
         padding-top: 140px;
         width: 95%;
     }
+    .main-section .main-h1 {
+        font-size: 40px;
+    }
 }
+
+
 
 
 

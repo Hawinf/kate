@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kate | Loading ...</title>
-    <link rel="stylesheet" href="./loading.css">
+    <link rel="stylesheet" href="./index..css">
     <link rel="icon" type="image/x-icon" href="./assets/images/kate-fav.png">
 </head>
 <body>
@@ -16,10 +16,14 @@
     </div>
 
     <script>
-        // Redirect to index.html after 5 seconds (5000 milliseconds)
-        setTimeout(function() {
-            window.location.href = 'homepage.html';
-        }, 5000);
+         // Redirect to index.html after 5 seconds
+         setTimeout(function() {
+            document.body.classList.add('fade-out');
+            setTimeout(function() {
+                localStorage.setItem('hasVisited', 'true'); // Mark as visited
+                window.location.href = 'homepage.html'; // Redirect to index.html
+            }, 500); // Wait for the fade-out transition to complete
+        }, 5000); 
     </script>
 </body>
 </html>
