@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Oswald;
+    src: url("./assets/Fonts/Oswald-Medium.ttf");
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px;
+}
+.logo-section .img-logo {
+    width: 100px;
+}
+.bio-section h3 {
+    font-family: Oswald;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+}
+.menu-section .img-menu {
+    width: 45px;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .logo-section .img-logo {
+        margin-top: 12px;
+    }
+    .bio-section h3 {
+        display: none;
+    }
+}

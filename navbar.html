@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katsiaryna Putsilouskaya</title>
+    <title>KATE</title>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/kate-fav.png">
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="logo-section">
+            <img class="img-logo" src="./assets/images/kate-logo.png" alt="KATE">
+        </div>
+        <div class="bio-section">
+            <h3>Join me on my travel journey. Follow me on social media for the latest updates!</h3>
+        </div>
+        <div class="menu-section" onclick="menuClick()">
+            <img class="img-menu" src="./assets/images/burger-bar.png" alt="Menu">
+        </div>
+    </nav>
+
+    <script>
+        function menuClick() {
+            alert('Button was clicked!');
+        }
+    </script>
 </body>
 </html>

@@ -10,17 +10,7 @@
 <body>
     <div class="container" id="pinContainer">
         <section class="panel blue">
-            <nav class="navbar">
-                <div class="logo-section">
-                    <img class="img-logo" src="./assets/images/kate-logo.png" alt="KATE">
-                </div>
-                <div class="bio-section">
-                    <h3>Join me on my travel journey. Follow me on social media for the latest updates!</h3>
-                </div>
-                <div class="menu-section">
-                    <img class="img-menu" src="./assets/images/burger-bar.png" alt="Menu">
-                </div>
-            </nav>
+            <div id="navbar"></div>
             <!-- POPUP -->
             <!-- <div id="notification">
                 <img src="./assets/images/pop-notif.png" class="pop-up" alt="">
@@ -66,27 +56,30 @@
                 <p class="main-2">In the end, traveling isn’t just about the sights you see; it’s about the memories you create, the friendships you forge, and the transformation that occurs within you. It’s an open invitation to step outside your comfort zone and embrace the unknown, making every journey a chapter in your personal story.</p>
             </main>
         </section>
-        <footer class="footer-section">
-            <h5>Follow Me On</h5>
-            <div class="social-media">
-                <a href="https://www.instagram.com/not_benjamin">Instagram</a>
-            </div>
-            <div class="social-media">
-                <a href="https://www.instagram.com/not_benjamin">Telegram</a>
-            </div>
-            <div class="social-media">
-                <a href="https://www.instagram.com/not_benjamin">Tiktok</a>
-            </div>
-            <p class="copyright">
-                ©Kate 2024. All rights reserved.
-            </p>
-        </footer>
+        <div id="footer"></div>
     </div>
     
 
 
 </body>
     <script>
+        // BELOW FETCHING MENU......
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading menu:', error));
+        // ABOVE FETCHING MENU............
+        // BELOW FETCHING FOOTER......
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading menu:', error));
+        // ABOVE FETCHING FOOTER............
+
         window.addEventListener('scroll', () => {
             // Get the scroll position
             const scrollPosition = window.scrollY;
@@ -96,7 +89,7 @@
             bottomImage.style.transform = `translateY(${Math.min(scrollPosition, 30)}px)`;
         });
 
-        // signature typing
+        // BELOW SIGNATURE TYPING...........
         const signatureText = "Katsiaryna Putsilouskaya-"; // Change this to your desired text
         const signatureElement = document.getElementById("signature");
         let index = 0;
@@ -111,8 +104,11 @@
                 signatureElement.classList.add("typing");
             }
         }
-
         type();
+        // ABOVE SIGNATURE TYPING........
+
+
+        
 
     </script>
 </html>
