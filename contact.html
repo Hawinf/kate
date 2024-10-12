@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATE | Contact</title>
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/kate-fav.png">
+</head>
+<body>
+    <!-- START LOADING -->
+    <div class="container-loader">
+        <div class="wrapper-load">
+            <div class="loader"></div>
+            <div class="loading-text"></div>
+        </div>
+    </div>  
+    <!-- END LOADING -->
+    <div class="container-about">
+        <nav class="navbar">
+            <div class="logo-section">
+                <a href=""><img class="img-logo" src="./assets/images/kate-logo.png" alt="KATE"></a>
+            </div>
+            <div class="bio-section">
+                <h3>Join me on my travel journey. Follow me on social media for the latest updates!</h3>
+            </div>
+            <div class="menu-section">
+                <img class="img-menu" src="./assets/images/burger-bar.png" alt="Menu">
+            </div>
+        </nav>
+        
+        <div class="wrapper-about">
+            <p>TEST TEST TEST TEST</p>
+        </div>
+    </div>
+
+    <div class="dropdown-menu">
+        <div class="nav-menu">
+            <img class="logo-menu" src="./assets/images/kate-logo.png" alt="KATE PAGE">
+            <img class="close-menu" src="./assets/images/eye.png" alt="close menu">
+        </div>
+        <div class="menu-content center">
+            <ul class="list-items">
+                <li><a href="">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <p class="copyright-menu">©Kate 2024. All rights reserved.</p>
+    </div>
+
+    <script>
+        // start laoding
+        setTimeout(function() {
+            // Hide the loading page
+            document.querySelector('.container-loader').style.display = 'none';
+            // Show the main content
+            document.querySelector('.container-about').style.display = 'block';
+        }, 3000); // 5000 milliseconds = 5 seconds
+        // end loading
+        document.querySelector('.img-menu').addEventListener("click", function(){
+            var showMenu = document.querySelector(".dropdown-menu");
+            var closeMenu = document.querySelector(".wrapper-about");
+
+            if(showMenu.style.display === "none"){
+                showMenu.style.display = "block";
+                closeMenu.style.display = "none";
+            } else {
+                showMenu.style.display = "none";
+            }
+        })
+        document.querySelector('.close-menu').addEventListener("click", function(){
+            var showMenu = document.querySelector(".dropdown-menu");
+            var closeMenu = document.querySelector(".wrapper-about");
+
+            if(showMenu.style.display === "block"){
+                showMenu.style.display = "none";
+                closeMenu.style.display = "block";
+            } else {
+                showMenu.style.display = "block";
+            }
+        })
+    </script>
+</body>
+</html>
