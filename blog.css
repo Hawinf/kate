@@ -119,6 +119,7 @@ body {
 }
 .menu-content ul {
     list-style-type: none;
+    margin-right: 45px;
 }
 .list-items li {
     text-align: center;
