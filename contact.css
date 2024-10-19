@@ -180,10 +180,10 @@ li a:hover {
 }
 .contact-form .button {
     height: 50px;
-    width: 10%;
+    width: 100%;
     border: 1px solid black;
     font-family: Oswald;
-    color: #5e5c5c;
+    color: white;
     background-color: black;
 }
 
@@ -193,5 +193,16 @@ li a:hover {
     }
     .bio-section h3 {
         display: none;
+    }
+    .contact-desc .contact-judul {
+        margin-bottom: 0;
+    }
+    .contact-desc p {
+        margin-top: 3px;
+    }
+}
+@media (max-width:576px) {
+    .wrapper-contact {
+        width: 90%;
     }
 }
