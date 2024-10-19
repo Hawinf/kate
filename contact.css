@@ -200,9 +200,31 @@ li a:hover {
     .contact-desc p {
         margin-top: 3px;
     }
+    .form-1 {
+        display: block;
+    } 
+    .contact-form .form-identity-1 {
+        width: 100%;
+        margin-right: 0;
+    }
+    .contact-form .form-identity-2 {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 @media (max-width:576px) {
     .wrapper-contact {
         width: 90%;
     }
+    /* .form-1 {
+        display: block;
+    } 
+    .contact-form .form-identity-1 {
+        width: 100%;
+        margin-right: 0;
+    }
+    .contact-form .form-identity-2 {
+        width: 100%;
+        margin-left: 0;
+    } */
 }
