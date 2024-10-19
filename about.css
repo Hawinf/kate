@@ -91,8 +91,8 @@ body {
 .about-head {
     /* background-color: rgb(237, 243, 245); */
     background-color: #ffffff;
-opacity: 0.1;
-background: linear-gradient(135deg, #00000055 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #000000 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #00000055 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #000000 25%, #ffffff 25%) 0px 0/ 20px 20px;
+    opacity: 0.1;
+    background: linear-gradient(135deg, #00000055 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #000000 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #00000055 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #000000 25%, #ffffff 25%) 0px 0/ 20px 20px;
     height: 220px;
     margin: 0;
 }

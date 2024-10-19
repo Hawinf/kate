@@ -138,6 +138,14 @@ li a:hover {
     text-align: center;
 }
 /* MENU */
+.wrapper-blog {
+    padding: 100px 20px;
+}
+.wrapper-blog .blog-tittle {
+    font-family: Oswald;
+    text-align: center;
+}
+
 
 @media (max-width:768px) {
     .logo-section .img-logo {
