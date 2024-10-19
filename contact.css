@@ -204,12 +204,15 @@ li a:hover {
         display: block;
     } 
     .contact-form .form-identity-1 {
-        width: 100%;
+        width: 97%;
         margin-right: 0;
     }
     .contact-form .form-identity-2 {
-        width: 100%;
+        width: 97%;
         margin-left: 0;
+    }
+    .contact-form textarea {
+        width: 97%;
     }
 }
 @media (max-width:576px) {
