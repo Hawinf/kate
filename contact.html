@@ -29,9 +29,21 @@
             </div>
         </nav>
         
-        <div class="wrapper-about">
-            <p>TEST TEST TEST TEST</p>
+        <div class="wrapper-contact">
+            <div class="contact-desc">
+                <h1>Get In Touch</h1>
+                <p>I’d love to hear from you! Whether you have a project in mind, I’m available for freelance opportunities, collaborations, and consultations.</p>
+            </div>
+            <div class="contact-form">
+                <div class="form-1">
+                    <input class="form-identity-1" type="text" placeholder="Your Name*">
+                    <input class="form-identity-2" type="text" placeholder="Your Email*">
+                </div>
+                <textarea placeholder="Leave a message*" id=""></textarea>
+                <button class="button">Send</button>
+            </div>
         </div>
+        <div id="footer"></div>
     </div>
 
     <div class="dropdown-menu">
@@ -49,6 +61,8 @@
         </div>
         <p class="copyright-menu">©Kate 2024. All rights reserved.</p>
     </div>
+
+    
 
     <script>
         // start laoding
@@ -81,6 +95,15 @@
                 showMenu.style.display = "block";
             }
         })
+
+        // BELOW FETCHING FOOTER......
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading menu:', error));
+        // ABOVE FETCHING FOOTER............
     </script>
 </body>
 </html>

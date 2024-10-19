@@ -139,6 +139,54 @@ li a:hover {
 }
 /* MENU */
 
+.wrapper-contact {
+    padding: 100px 20px;
+    font-family: Oswald;
+    width: 80%;
+    margin: 0 auto;
+}
+.contact-desc p {
+    color: #5e5c5c;
+}
+.contact-form {
+    width: 100%;
+    margin-top: 30px;
+}
+.form-1 {
+    display: flex;
+}
+.contact-form .form-identity-1 {
+    width: 60%;
+    margin-right: 5px;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 5px;
+}
+.contact-form .form-identity-2 {
+    width: 100%;
+    margin-left: 5px;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 5px;
+}
+.contact-form textarea {
+    width: 99%;
+    height: 170px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding: 5px;
+}
+.contact-form .button {
+    height: 50px;
+    width: 10%;
+    border: 1px solid black;
+    font-family: Oswald;
+    color: #5e5c5c;
+    background-color: black;
+}
+
 @media (max-width:768px) {
     .logo-section .img-logo {
         margin-top: 12px;
